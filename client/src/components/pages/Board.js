@@ -21,7 +21,7 @@ const Board = ({ match }) => {
   }, [dispatch, match.params.id]);
 
   useEffect(() => {
-    if (board?.title) document.title = board.title + ' | TrelloClone';
+    if (board?.title) document.title = board.title + ' | Sprintly';
   }, [board?.title]);
 
   if (!isAuthenticated) {
@@ -61,7 +61,7 @@ const Board = ({ match }) => {
           'url(' +
           (board.backgroundURL
             ? board.backgroundURL
-            : 'https://images.unsplash.com/photo-1598197748967-b4674cb3c266?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80') +
+            : 'https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430867.jpg?t=st=1729922830~exp=1729926430~hmac=81ba54eec8a039487accae5c0ae9c95fa434f9346d78ac6200d4b357509bf863&w=1380') +
           ')',
       }}
     >
